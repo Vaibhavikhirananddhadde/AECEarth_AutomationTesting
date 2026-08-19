@@ -1,5 +1,6 @@
 package utils;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 public class ElementUtil {
@@ -32,6 +33,14 @@ public class ElementUtil {
         return page.locator(selector)
                 .isVisible();
 	
+    }
+    
+    public void scrollIfNeeded(Locator element) {
+    	element.scrollIntoViewIfNeeded();
+    }
+    
+    public void scrollDownJS() {
+    	page.evaluate("window.scrollTo(0, document.body.scrollHeight)");
     }
 
 }

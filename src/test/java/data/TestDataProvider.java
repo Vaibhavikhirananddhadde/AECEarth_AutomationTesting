@@ -9,7 +9,7 @@ public class TestDataProvider {
 	 @DataProvider(name = "loginData")
 	public static Object[][] loginData() {
         
-        ExcelUtil excel = new ExcelUtil("Login");
+        ExcelUtil excel = new ExcelUtil("Login_cred");
 
         int rows = excel.getRowCount();
         int columns = excel.getColumnCount();

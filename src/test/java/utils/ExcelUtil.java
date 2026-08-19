@@ -18,7 +18,7 @@ public class ExcelUtil {
         try {
 
             FileInputStream fis =
-                    new FileInputStream("");
+                    new FileInputStream("C:\\Users\\Orcon\\eclipse-workspace\\AECearth_automation\\src\\test\\resources\\TestData.xlsx");
 
             workbook =
                     new XSSFWorkbook(fis);

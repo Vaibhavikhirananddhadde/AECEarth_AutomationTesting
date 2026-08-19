@@ -21,7 +21,7 @@ public class ScreenshotUtil {
 			String filename = 
 					testName+"_"+System.currentTimeMillis()+".png";
 			
-			Path path = Paths.get(folder+filename);
+			Path path = Paths.get(folder + filename);
 			
 			page.screenshot( 
 					new Page.ScreenshotOptions()

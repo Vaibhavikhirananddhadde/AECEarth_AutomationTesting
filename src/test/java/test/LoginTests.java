@@ -91,5 +91,7 @@ public class LoginTests extends BaseClass{
 		
 		Assert.assertTrue(page.url().contains("/login"));
 	}
+	
+	
 
 }

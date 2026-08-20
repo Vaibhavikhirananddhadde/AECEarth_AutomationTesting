@@ -1,6 +1,7 @@
 package base;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -45,19 +46,19 @@ public class BaseClass{
 		
 		switch(browserName.toLowerCase()) {
 		case "chromium":
-			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headless));
+			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(Arrays.asList("--start-maximized")));
 			break;
 			
 		case "chrome":
-			browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(headless));
+			browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false).setArgs(Arrays.asList("--start-maximized")));
 			break;
 			
 		case "safari":
-			browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headless));
+			browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headless).setArgs(Arrays.asList("--start-maximized")));
 			break;
 			
 		case "firefox":
-			browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headless));
+			browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headless).setArgs(Arrays.asList("--start-maximized")));
 			break;
 			
 		 default:
@@ -69,6 +70,7 @@ public class BaseClass{
 		context = browser.newContext();
 		page = context.newPage();
 		page.navigate(ConfigReader.getProperty("baseUrl"));
+		page.evaluate("document.body.style.zoom='80%'");
 			
 	}
 	

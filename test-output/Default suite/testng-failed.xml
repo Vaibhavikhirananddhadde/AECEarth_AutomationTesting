@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verify_EditPost"/>
+          <include name="verifyDeleteComment"/>
         </methods>
       </class> <!-- test.NewsFeedTests -->
     </classes>

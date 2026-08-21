@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-20T18:17:17 IST" name="Default suite" finished-at="2026-08-20T18:17:37 IST" duration-ms="19885">
+  <suite started-at="2026-08-21T16:52:02 IST" name="Default suite" finished-at="2026-08-21T16:52:20 IST" duration-ms="17303">
     <groups>
     </groups>
-    <test started-at="2026-08-20T18:17:17 IST" name="Default test" finished-at="2026-08-20T18:17:37 IST" duration-ms="19885">
+    <test started-at="2026-08-21T16:52:02 IST" name="Default test" finished-at="2026-08-21T16:52:20 IST" duration-ms="17303">
       <class name="test.NewsFeedTests">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test.NewsFeedTests@5c6648b0]" started-at="2026-08-20T18:17:17 IST" name="setup" finished-at="2026-08-20T18:17:27 IST" duration-ms="9923" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:test.NewsFeedTests@7cc0cdad]" started-at="2026-08-21T16:52:03 IST" name="setup" finished-at="2026-08-21T16:52:10 IST" duration-ms="7310" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test.NewsFeedTests.deletePost()]]>
+                <![CDATA[public void test.NewsFeedTests.verifyDeleteComment() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deletePost()[pri:0, instance:test.NewsFeedTests@5c6648b0]" started-at="2026-08-20T18:17:27 IST" name="deletePost" finished-at="2026-08-20T18:17:36 IST" duration-ms="8996" status="PASS">
+        <test-method signature="verifyDeleteComment()[pri:0, instance:test.NewsFeedTests@7cc0cdad]" started-at="2026-08-21T16:52:10 IST" name="verifyDeleteComment" finished-at="2026-08-21T16:52:19 IST" duration-ms="9472" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletePost -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.NewsFeedTests@5c6648b0]" started-at="2026-08-20T18:17:36 IST" name="tearDown" finished-at="2026-08-20T18:17:37 IST" duration-ms="914" status="PASS">
+        </test-method> <!-- verifyDeleteComment -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.NewsFeedTests@7cc0cdad]" started-at="2026-08-21T16:52:19 IST" name="tearDown" finished-at="2026-08-21T16:52:20 IST" duration-ms="488" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deletePost status=SUCCESS method=NewsFeedTests.deletePost()[pri:0, instance:test.NewsFeedTests@5c6648b0] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDeleteComment status=SUCCESS method=NewsFeedTests.verifyDeleteComment()[pri:0, instance:test.NewsFeedTests@7cc0cdad] output={null}]]]>
               </value>
             </param>
           </params>

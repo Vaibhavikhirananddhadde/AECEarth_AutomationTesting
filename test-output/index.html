@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Orcon\AppData\Local\Temp\testng-eclipse--180509149\testng-customsuite.xml</span>
+                    <span>C:\Users\Orcon\AppData\Local\Temp\testng-eclipse--2043796408\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.NewsFeedTests" class="method navigator-link" hash-for-method="deletePost">deletePost</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.NewsFeedTests" class="method navigator-link" hash-for-method="verifyDeleteComment">verifyDeleteComment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deletePost">
-                  </a> <!-- deletePost -->
-                  <span class="method-name">deletePost</span>
+                  <a name="verifyDeleteComment">
+                  </a> <!-- verifyDeleteComment -->
+                  <span class="method-name">verifyDeleteComment</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Orcon\AppData\Local\Temp\testng-eclipse--180509149\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Orcon\AppData\Local\Temp\testng-eclipse--2043796408\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;test.NewsFeedTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;deletePost&quot;/&gt;
+          &lt;include name=&quot;verifyDeleteComment&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- test.NewsFeedTests --&gt;
     &lt;/classes&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deletePost')
+data.setCell(0, 1, 'verifyDeleteComment')
 data.setCell(0, 2, 'test.NewsFeedTests')
-data.setCell(0, 3, 8996);
+data.setCell(0, 3, 9472);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,19 +213,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">test.NewsFeedTests</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkEditComment</span>
+                <br/>
+                <span class="ignored-method-name">check_confirmBeforeDlt</span>
+                <br/>
                 <span class="ignored-method-name">feedVideo</span>
+                <br/>
+                <span class="ignored-method-name">like_Post</span>
                 <br/>
                 <span class="ignored-method-name">verify_EditPost</span>
                 <br/>
                 <span class="ignored-method-name">feedPhoto</span>
                 <br/>
-                <span class="ignored-method-name">check_confirmBeforeDlt</span>
+                <span class="ignored-method-name">deletePost</span>
+                <br/>
+                <span class="ignored-method-name">verifyComment</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -239,16 +247,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.NewsFeedTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void test.NewsFeedTests.deletePost())</span>
+                <span class="method-name">setup(public void test.NewsFeedTests.verifyDeleteComment() throws java.lang.InterruptedException)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deletePost</span>
-                <span class="method-start">9925 ms</span>
+                <span class="method-name">verifyDeleteComment</span>
+                <span class="method-start">7312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=deletePost status=SUCCESS method=NewsFeedTests.deletePost()[pri:0, instance:test.Ne...)</span>
-                <span class="method-start">18937 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyDeleteComment status=SUCCESS method=NewsFeedTests.verifyDeleteComment()[pri:0...)</span>
+                <span class="method-start">16788 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
